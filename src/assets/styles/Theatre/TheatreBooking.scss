@@ -1,0 +1,93 @@
+.booking {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    border-radius: 8px;
+   width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .seats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+        gap: 1em;
+        margin-bottom: 2em;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 1em;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+
+            p {
+                margin: 0.5em 0;
+                font-size: 1em;
+
+                span {
+                    font-weight: bold;
+                    color: #ff385c; // Accent color
+                }
+            }
+
+            button {
+                margin-top: 1em;
+                background-color: #ff385c;
+                color: white;
+                border: none;
+                padding: 0.5em 1em;
+                font-size: 1em;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #e63250;
+                }
+
+                i {
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+
+    .total {
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+
+            span {
+                font-weight: bold;
+                color: #ff385c;
+            }
+        }
+
+        button {
+            background-color: #ff385c;
+            color: white;
+            border: none;
+            padding: 0.7em 2em;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #e63250;
+            }
+        }
+    }
+}

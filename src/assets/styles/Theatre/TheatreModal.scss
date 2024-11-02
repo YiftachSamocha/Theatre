@@ -1,0 +1,92 @@
+.theatre-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 30, 30, 0.9); // Darker transparent background
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000; // Ensure modal is above other content
+    max-width: 400px;
+    width: 90%; // Responsive width for smaller screens
+
+    h3 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+        text-align: center;
+        color: #ff385c; // Accent color for the heading
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        div {
+            display: flex;
+            justify-content: space-between; // Align items properly
+            background-color: #1a1a1a; // Dark background for seat info
+            padding: 1em;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+            p {
+                margin: 0;
+                span {
+                    font-weight: bold;
+                    color: #ff385c; // Accent color
+                }
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: #ff385c;
+                cursor: pointer;
+                font-size: 1.2em;
+
+                &:hover {
+                    color: #e63250; // Darker shade on hover
+                }
+
+                i {
+                    margin-left: 0.5em; // Space between text and icon
+                }
+            }
+        }
+
+        p {
+            text-align: right; // Align total price to the right
+            font-size: 1.2em;
+            margin-top: 1em;
+            span {
+                font-weight: bold;
+                color: #ff385c; // Accent color for total
+            }
+        }
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-between; // Align buttons side by side
+        margin-top: 1em;
+
+        button {
+            flex: 1; // Ensure buttons take equal space
+            margin: 0 0.5em; // Space between buttons
+            background-color: #ff385c;
+            color: white;
+            border: none;
+            padding: 0.7em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #e63250; // Darker shade on hover
+            }
+        }
+    }
+}

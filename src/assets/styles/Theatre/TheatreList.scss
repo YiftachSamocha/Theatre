@@ -1,0 +1,29 @@
+.theatre-list {
+    margin: 0 auto;
+    padding: 2em;
+
+    .row {
+        display: flex;
+
+        >* {
+            height: 75px;
+            width: 75px;
+            cursor: pointer;
+            
+        }
+        .reserved{
+            color: #666666;
+            cursor: auto;
+        }
+        .selected{
+            color: #CF1E19;
+        }
+    }
+
+    
+
+    i {
+        height: 100%;
+        width: 100%;
+    }
+}
